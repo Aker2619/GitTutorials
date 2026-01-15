@@ -1,2 +1,2 @@
-pyttsx3==2.99
-pyobjc==11.0
+# No external dependencies required
+# Using macOS built-in 'say' command via subprocess (standard library)
