@@ -1,5 +1,5 @@
 name = "Alonza"
-names = ["Alonza", "John", "Jane", "Jim", "Jill"]
+names = ["Alonza", "John", "Micheal", "Kelly", "Marlon"]
 
 for name in names:
     print(f"Hello, {name}!")
