@@ -19,7 +19,7 @@ Soon, a delicious soup was ready for everyone to share.
 The traveler taught them that by working together, they could create something wonderful from nothing.
 """
 
-voice = "Alex"
+voice = "Daniel"
 
 print(stoneSoupStory)
 subprocess.run(["say", "-v", voice, stoneSoupStory])
