@@ -20,6 +20,8 @@ The traveler taught them that by working together, they could create something w
 """
 
 voice = "Daniel"
+sayStory = False
 
 print(stoneSoupStory)
-subprocess.run(["say", "-v", voice, stoneSoupStory])
+if sayStory:
+    subprocess.run(["say", "-v", voice, stoneSoupStory])
