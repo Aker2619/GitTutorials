@@ -1,3 +1,5 @@
 name = "Alonza"
+names = ["Alonza", "John", "Jane", "Jim", "Jill"]
 
-print(f"Hello, {name}!") 
+for name in names:
+    print(f"Hello, {name}!")
