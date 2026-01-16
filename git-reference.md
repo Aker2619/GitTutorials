@@ -57,6 +57,7 @@ git commit -m "short, descriptive message"
 4. Resolve any conflicts, stage the fixes, and finish with `git commit`.
 
 - Abort an in-progress merge before committing: `git merge --abort`
+- Remember the direction: the branch you currently have checked out receives changes from the branch named in `git merge other-branch`
 
 ## Deleting Branches
 
