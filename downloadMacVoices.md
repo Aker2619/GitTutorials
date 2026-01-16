@@ -1,4 +1,4 @@
-# How to Download Additional Voices on macOS
+# How to Download Additional Voices on MacOS
 
 The macOS `say` command uses voices installed on your system. You can download more voices through System Settings.
 
