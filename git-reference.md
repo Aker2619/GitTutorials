@@ -25,6 +25,7 @@ git config --global user.email you@example.com
 - Add everything new or modified: `git add .`
 - Stage a single file: `git add path/to/file`
 - Unstage a file: `git restore --staged path/to/file`
+- Remember that `git add` fills the staging area; only staged changes are captured by `git commit`, so you can curate what lands in each commit
 
 ## Commit Work
 
@@ -41,7 +42,7 @@ git commit -m "short, descriptive message"
 - Create and stay on a new branch: `git switch -c feature-name`
 - Create a new branch from another branch (and check it out): `git switch -c juniorBranch test-branch`
 - Switch to an existing branch: `git switch main`
-- Rename the current branch: `git branch -m new-name`
+- Rename the current branch: `git branch -m new-name` (if it tracked a remote branch, follow up with `git push origin -u new-name` and optionally remove the old remote ref via `git push origin --delete old-name`)
 
 ## Merging Workflow
 
@@ -87,5 +88,15 @@ git commit -m "short, descriptive message"
 - Delete a remote branch: `git push origin --delete feature-name`
 - See remote refs: `git remote -v` and `git branch -r`
 - Public repos are readable by anyone; private repos require you to authenticate (HTTPS token or SSH key associated with your GitHub account) before you can clone or push
+- Even on public/open-source repos, only collaborators with write access (or maintainers merging pull requests) can push updates—others must fork and open PRs
+- `origin` is just the conventional name for the first remote; add more remotes with custom labels (e.g., `git remote add mysecond https://github.com/user/AnotherRepo.git`) and push/pull from each explicitly (`git push mysecond main`)
+
+## Deploying to Heroku
+
+- Install the Heroku CLI and log in: `heroku login`
+- Attach your local repo to an app: `heroku git:remote -a your-app-name`
+- Keep GitHub (`origin`) as the collaboration remote; Heroku is a separate remote (normally named `heroku`)
+- Deploy by pushing the branch you want to run: `git push heroku main` (or any branch you target)
+- Each push to the Heroku remote triggers a build/deploy; it doesn’t replace your GitHub history
 
 Keep this file nearby when working in Git so you can follow the common sequence: initialize → edit → stage → commit → branch → merge → clean up.
