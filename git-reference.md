@@ -84,5 +84,6 @@ git commit -m "short, descriptive message"
 - After the initial `-u` push, you can just run `git push`/`git pull` while on that branch and Git will target the tracked remote branch automatically
 - Delete a remote branch: `git push origin --delete feature-name`
 - See remote refs: `git remote -v` and `git branch -r`
+- Public repos are readable by anyone; private repos require you to authenticate (HTTPS token or SSH key associated with your GitHub account) before you can clone or push
 
 Keep this file nearby when working in Git so you can follow the common sequence: initialize → edit → stage → commit → branch → merge → clean up. 
