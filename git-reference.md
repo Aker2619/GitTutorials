@@ -39,6 +39,7 @@ git commit -m "short, descriptive message"
 
 - List branches: `git branch`
 - Create and stay on a new branch: `git switch -c feature-name`
+- Create a new branch from another branch (and check it out): `git switch -c juniorBranch test-branch`
 - Switch to an existing branch: `git switch main`
 - Rename the current branch: `git branch -m new-name`
 
@@ -76,9 +77,11 @@ git commit -m "short, descriptive message"
 
 - Add a remote after creating a repo on GitHub: `git remote add origin git@github.com:username/project.git`
 - Push your local `main` the first time (and set upstream): `git push -u origin main`
+- Remember: `git add` and `git commit` only update your local repository—run `git push` once commits are ready to publish
 - Pull updates from GitHub: `git pull` (pulls from the upstream branch)
 - Push new commits on any branch: `git push`
 - Publish a new branch: `git push -u origin feature-name`
+- After the initial `-u` push, you can just run `git push`/`git pull` while on that branch and Git will target the tracked remote branch automatically
 - Delete a remote branch: `git push origin --delete feature-name`
 - See remote refs: `git remote -v` and `git branch -r`
 
