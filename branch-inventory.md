@@ -2,7 +2,6 @@
 
 List of local branches in this repository (update as needed):
 
-- `juniorBranch`
+- `workingBranch`
 - `main`
-- `test-branch`
-
+- `productionBranch`
