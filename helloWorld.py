@@ -1,7 +1,7 @@
 import subprocess
 
 name = "Alonza"
-names = ["Alonza", "John", "Micheal", "Kelly", "Marlon"]
+names = ["Alonza", "John", "Micheal", "Kelly", "Marlon", "Myagi"]
 sayNames = False
 
 if sayNames:
