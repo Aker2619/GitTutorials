@@ -81,5 +81,6 @@ git commit -m "short, descriptive message"
 - Publish a new branch: `git push -u origin feature-name`
 - Delete a remote branch: `git push origin --delete feature-name`
 - See remote refs: `git remote -v` and `git branch -r`
+- Public GitHub repositories are readable by anyone; private ones require authentication (HTTPS token or SSH key tied to your GitHub account) before you can clone or push
 
 Keep this file nearby when working in Git so you can follow the common sequence: initialize → edit → stage → commit → branch → merge → clean up.
