@@ -37,7 +37,7 @@ git commit -m "short, descriptive message"
 
 ## Branching Basics
 
-- List branches: `git branch`
+- List branches (current one shows `*`): `git branch`
 - Create and stay on a new branch: `git switch -c feature-name`
 - Create a new branch from another branch (and check it out): `git switch -c juniorBranch test-branch`
 - Switch to an existing branch: `git switch main`
