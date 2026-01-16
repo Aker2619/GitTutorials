@@ -25,6 +25,7 @@ git config --global user.email you@example.com
 - Add everything new or modified: `git add .`
 - Stage a single file: `git add path/to/file`
 - Unstage a file: `git restore --staged path/to/file`
+- Remember that `git add` moves changes into the staging area; only staged changes end up in the next `git commit`, which lets you curate exactly what each commit contains
 
 ## Commit Work
 
@@ -87,4 +88,12 @@ git commit -m "short, descriptive message"
 - Public repos are readable by anyone; private repos require you to authenticate (HTTPS token or SSH key associated with your GitHub account) before you can clone or push
 - Even on public/open-source repos, only collaborators with write access (or maintainers merging pull requests) can push updates—others must fork and open PRs
 
-Keep this file nearby when working in Git so you can follow the common sequence: initialize → edit → stage → commit → branch → merge → clean up. 
+## Deploying to Heroku
+
+- Install the Heroku CLI and log in: `heroku login`
+- Attach your local repo to an app: `heroku git:remote -a your-app-name`
+- Keep GitHub (`origin`) as the collaboration remote; Heroku is a separate remote (normally named `heroku`)
+- Deploy by pushing the branch you want to run: `git push heroku main` (or any branch you target)
+- Each push to the Heroku remote triggers a build/deploy; it doesn’t replace your GitHub history
+
+Keep this file nearby when working in Git so you can follow the common sequence: initialize → edit → stage → commit → branch → merge → clean up.
