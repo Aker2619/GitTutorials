@@ -85,5 +85,6 @@ git commit -m "short, descriptive message"
 - Delete a remote branch: `git push origin --delete feature-name`
 - See remote refs: `git remote -v` and `git branch -r`
 - Public repos are readable by anyone; private repos require you to authenticate (HTTPS token or SSH key associated with your GitHub account) before you can clone or push
+- Even on public/open-source repos, only collaborators with write access (or maintainers merging pull requests) can push updates—others must fork and open PRs
 
 Keep this file nearby when working in Git so you can follow the common sequence: initialize → edit → stage → commit → branch → merge → clean up. 
