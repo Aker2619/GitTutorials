@@ -73,6 +73,7 @@ git commit -m "short, descriptive message"
 
 - Restore a file to the last committed version: `git restore --source=HEAD --worktree path/to/file`
 - Discard all local changes (dangerous!): `git reset --hard HEAD`
+- Make a file match another branch without merging everything: `git restore --source=other-branch --staged --worktree path/to/file` (then commit)
 
 ## Working With GitHub (or Any Remote)
 
