@@ -1,19 +1,11 @@
 def generateThreeDigitNumbers():
     """Generates string numbers from 0 to 999, all padded to 3 digits."""
-    threeDigitNumbers = []
-    for num in range(1000):
-        paddedNumber = str(num).zfill(3)
-        threeDigitNumbers.append(paddedNumber)
-    return threeDigitNumbers
+    return [str(num).zfill(3) for num in range(1000)]
 
 
 def generateFourDigitNumbers():
     """Generates string numbers from 0 to 9999, all padded to 4 digits."""
-    fourDigitNumbers = []
-    for num in range(10000):
-        paddedNumber = str(num).zfill(4)
-        fourDigitNumbers.append(paddedNumber)
-    return fourDigitNumbers
+    return [str(num).zfill(4) for num in range(10000)]
 
 
 if __name__ == "__main__":
