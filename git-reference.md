@@ -45,7 +45,7 @@ git commit -m "short, descriptive message"
 
 ## Merging Workflow
 
-1. Switch to the branch that should receive the changes (usually `main`):
+1. Switch to the branch that should receive the changes (e.g., `main` or `juniorBranch`):
    ```bash
    git switch main
    ```
